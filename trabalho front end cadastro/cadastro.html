@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"    type="text/css" href="cadastro.css" media="screen">
+    
+    <title>Fomulário de Cadastro</title>
+
+</head>
+<body>
+    
+    <div>
+        <h1><id="Cadastro"> Cadastro Pessoal</h1> 
+        <figure>
+            <img src="icone cadastro.png" alt="ícone de cadastro">
+            </figure>
+        <p><id="Insira"> Insira seus dados</p>
+        <br>
+    </div> 
+
+    <form action="" method="post">
+
+        <fieldset class="grupo"></fieldset>
+       
+        <fieldset>
+          
+            <h2>Dados pessoais</h2>
+           
+            <div class="campo"></div>
+                <label for="">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                
+                <label for="">Data de nascimento</label>
+                <input type="date" name="Data de nascimento" id="Data de Nascimento" required>
+                
+                <label for="">RG</label>
+                <input type="text" name="RG" id="RG" required> 
+
+                <label for="">CPF</label>
+                <input type="text" name="CPF" id="CPF" required>             
+            
+            </div>
+        
+        </fieldset>
+        
+<fieldset>
+
+    <h2>Login</h2>
+            
+    <div>
+              
+      <label for="">Nome de Usuário</label>
+         <input type="text" name="Nome de Usuário" id="Nome de Usuário" required>
+
+         <label for="">Email</label>
+         <input type="email" name="email" id="email" required>
+
+         <label for="">Senha</label>
+         <input type="password" name="senha" id="senha" required>
+            
+    </div>
+
+        </fieldset>
+
+        <fieldset>
+            
+            <h2>Endereço</h2>
+
+            <div>
+
+                <label for="">Cidade</label>
+                <input type="text" name="Cidade" id="Cidade" required>
+                
+                <label for="">Estado</label>
+                <select>
+                    <option value="">Selecione seu estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                
+                <label for="">CEP</label>
+                <input type="text" name="CEP" id="CEP" required>
+
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="fileUploaded" required />
+                
+                
+            </div>
+
+
+        </fieldset>
+
+
+
+
+
+
+        <fieldset>
+        <div class="botao"></div>
+        <input type="submit" value="Enviar" class="botao">
+        <div class="botao2"></div>
+        <input type="reset" value="Limpar" class="botao2">
+    
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
